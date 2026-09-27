@@ -246,7 +246,7 @@ The backend will be built as a **monolithic application** with clear internal mo
 **Rationale:** A monolith accelerates MVP development by avoiding distributed system complexity (inter-service communication, eventual consistency, service discovery). The 6-month timeline and 100-user scale do not justify microservices overhead. However, modular code structure prepares for future decomposition if scale demands it (e.g., AI service, notification service could be split in Phase 2).
 
 **Technology Stack:**
-- **Backend Framework:** Node.js with Express (preferred) or Python with FastAPI
+- **Backend Framework:** J
   - Node.js chosen for team familiarity, TypeScript consistency with frontend, and rich ecosystem for authentication libraries
 - **API Style:** RESTful API for CRUD operations; consider GraphQL for complex dashboard queries if needed
 - **Background Jobs:** Bull (Node.js) or Celery (Python) for AI question generation, email notifications, and analytics aggregation
